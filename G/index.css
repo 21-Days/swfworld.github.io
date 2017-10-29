@@ -1,0 +1,62 @@
+body {
+  background: black;
+}
+p {
+  color: white;
+  font-weight: bold;
+}
+h1 {
+  color: orange;
+  font-weight: bold;
+}
+
+div {
+  padding: none;
+  height= 20px;
+  display: inline-block;
+  border:1px;
+}
+
+img{
+  display: inline-block;
+  height: 72px;
+}
+
+a{
+  color: orangered;
+}
+
+.box{
+  display: inline-block;
+  padding-top: 0%;
+}
+
+.subdiv{
+  padding: inherit;
+}
+
+.font-big {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.padding-top-10{
+  padding-top: 2px;
+}
+
+.padding-left-25{
+  padding-top: 0%;
+  padding-left: 32px;
+}
+.align-block{
+  display: block;
+  align-content: center;
+  align-items: baseline;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.white {
+  color: white
+}
