@@ -1,12 +1,12 @@
 body {
-  background: black;
+  background: orange;
 }
 p {
-  color: white;
+  color: blue;
   font-weight: bold;
 }
 h1 {
-  color: orange;
+  color: blue;
   font-weight: bold;
 }
 
@@ -23,7 +23,7 @@ img{
 }
 
 a{
-  color: orangered;
+  color: grey;
 }
 
 .box{
