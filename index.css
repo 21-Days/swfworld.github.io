@@ -1,5 +1,5 @@
 body {
-  background: orange;
+  background: white;
 }
 p {
   color: blue;
@@ -23,7 +23,7 @@ img{
 }
 
 a{
-  color: grey;
+  color: #4e89a4;
 }
 
 .box{
