@@ -5,5 +5,8 @@ img {
   height: 70px;
 }
 .align-block {
-  display: align-block;
+  display: inline-block;
+}
+p {
+ font-size: 24px; 
 }
