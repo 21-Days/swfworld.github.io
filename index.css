@@ -1,3 +1,9 @@
 body {
-  background-color: NavajoWhite;
+  background-color: White;
+}
+img {
+  height: 75px;
+}
+.align-block {
+  display: align-block;
 }
