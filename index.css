@@ -5,7 +5,7 @@ img {
   height: 70px;
 }
 .align-block {
-  display: inline-block;
+  display: block;
 }
 p {
  font-size: 24px; 
