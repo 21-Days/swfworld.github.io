@@ -1,0 +1,61 @@
+body {
+  background-color: LightYellow;
+}
+p {
+  color: blue;
+  font-weight: bold;
+}
+h1 {
+  color: blue;
+  font-weight: bold;
+}
+
+h3 {
+  color: blue;
+  font-weight: bold;
+}
+
+div {
+  display: inline-block;
+  border:1px;
+}
+
+img{
+  display: inline-block;
+  height: 72px;
+}
+
+a{
+  color: #4e89a4;
+}
+
+.selected {
+  color: aqua;
+}
+
+.box{
+  display: inline-block;
+  padding-top: 0%;
+}
+
+.subdiv{
+  padding: inherit;
+}
+
+.font-big {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.padding-left-25{
+  padding-top: 0%;
+  padding-left: 32px;
+}
+.align-block{
+  display: block;
+  align-content: center;
+  align-items: baseline;
+  padding-left: 2%;
+  padding-right: 2%;
+}
