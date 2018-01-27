@@ -13,7 +13,7 @@ function getCookie(cname) {
 		while (c.charAt(0) == ' ') {
 			c = c.substring(1);
 		}
-		if (c.indexOf(name) == 0) {
+		if (c.indexOf(name) === 0) {
 			return c.substring(name.length, c.length);
 		}
 	}
@@ -33,7 +33,7 @@ function stringToBinary(str, spaceSeparatedOctets) {
 	}
 	return str.replace(/[\s\S]/g, function(str) {
 		str = zeroPad(str.charCodeAt().toString(2));
-		return !1 == spaceSeparatedOctets ? str : str + " "
+		return !1 == spaceSeparatedOctets ? str : str + " ";
 	});
 }
 alert("HELLO");
@@ -50,7 +50,7 @@ while (testV < 3) {
 	testV+=1;
 	var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Password:');
     if (pass1.toLowerCase()!="password" & testV ==3) {
-    	history.go(-1);
-    	return " ";
+        history.go(-1);
+        return " ";
     }
 }
