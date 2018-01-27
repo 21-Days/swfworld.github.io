@@ -34,7 +34,7 @@ function stringToBinary(str, spaceSeparatedOctets) {
 		str = zeroPad(str.charCodeAt().toString(2));
 		return !1 == spaceSeparatedOctets ? str : str + " "
 	});
-};
+}
 var testV = 1;
 var pass1 = prompt('Please Enter Your Password','Password:');
 while (testV < 3) {
