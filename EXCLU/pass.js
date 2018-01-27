@@ -41,16 +41,16 @@ var testV = 1;
 var pass1 = prompt('Please Enter Your Password','Password:');
 while (testV < 3) {
 	if (!pass1){history.go(-1);}
-	if (pass1.toLowerCase() == stringToBinary(FileReader.readAsText("/EXCLU/passwd.txt");)).toLowerCase() {
+	if (pass1.toLowerCase() == stringToBinary(FileReader.readAsText("/EXCLU/passwd.txt")).toLowerCase()) {
 		alert('You Got it Right!');
 		window.open('protectpage.html');
 		setcookie("loggedIn", "True", 1);
 		break;
-	} 
+	}
 	testV+=1;
 	var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Password:');
-}
-if (pass1.toLowerCase()!="password" & testV ==3) {
-	history.go(-1);
-	return " ";
+    if (pass1.toLowerCase()!="password" & testV ==3) {
+    	history.go(-1);
+    	return " ";
+    }
 }
