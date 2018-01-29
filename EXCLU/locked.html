@@ -1,1 +1,22 @@
-<script type="text/javascript">function checkCookie(cookie){var user=getCookie(cookie);if(loggedIn=="True"){alert("Welcome again!")}else{window.location.href="/EXCLU/"}}</script>
+<!DOCTYPE html>
+<html> 
+	<head>
+		<script type="text/javascript">function checkCookie(cookie){var user=getCookie(cookie);if(loggedIn=="True"){alert("Welcome again!")}else{window.location.href="/EXCLU/"}}</script>
+		<style type="text/css">
+			body {
+				margin:   0;
+				overflow: hidden;
+			}
+			#iframe1{
+				height:   100%;
+				left:     0px;
+				position: absolute;
+				top:      0px;
+				width:    100%;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" onclick="login()" value="Login">
+	</body>
+</html>
