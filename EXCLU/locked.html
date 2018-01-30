@@ -2,7 +2,7 @@
 <html> 
 	<head>
 		<script src="/resources/js.cookie-2.2.0.min.js"></script>
-		<script type="text/javascript">function checkCookie(){var loggedIn = Cookies.get("loggedIn"); if(loggedIn=="true"){alert("Welcome again!")} else{window.location.href="http://welcttw.gq/EXCLU/"}}</script>
+		<script type="text/javascript">function checkCookie(){var loggedIn = Cookies.get("loggedIn"); if(loggedIn=="true"){alert("Welcome!")} else{window.location.href="http://welcttw.gq/EXCLU/"}}</script>
 		<style type="text/css">
 			body {
 				margin:   0;
@@ -15,21 +15,24 @@
 				top:      0px;
 				width:    100%;
 			}
+			.align-block{
+				display: align-block;
+			}
 		</style>
 	</head>
 	<body onload="checkCookie();">
-		<div id="clockdiv">
+		<div class="align-block" id="clockdiv">
 			<div>
 				<span class="hours" id="hour"></span>
-				<div class="smalltext">Hours</div>
+				<div class="smalltext">Hours: </div>
 			</div>
 			<div>
 				<span class="minutes" id="minute"></span>
-				<div class="smalltext">Minutes</div>
+				<div class="smalltext">Minutes: </div>
 			</div>
 			<div>
 				<span class="seconds" id="second"></span>
-				<div class="smalltext">Seconds</div>
+				<div class="smalltext">Seconds: </div>
 			</div>
 		</div>
 		<script>
