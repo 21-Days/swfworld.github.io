@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html> 
 	<head>
-		<script type="text/javascript">function getCookie(cname){var name=cname+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' '){c=c.substring(1)}if(c.indexOf(name)===0){return c.substring(name.length,c.length)}}return""}function checkCookie(){var loggedIn=getCookie("loggedIn");if(loggedIn!=""){alert("Welcome again!")}else{window.location.href="http://welcttw.gq/EXCLU/"}}</script>
+		<script src="/resources/js.cookie-2.2.0.min.js"></script>
+		<script type="text/javascript">function checkCookie(){var loggedIn = Cookies.get("loggedIn"); if(loggedIn=="true"){alert("Welcome again!")} else{window.location.href="http://welcttw.gq/EXCLU/"}}</script>
 		<style type="text/css">
 			body {
 				margin:   0;
@@ -32,23 +33,21 @@
 			</div>
 		</div>
 		<script>
-		var deadline = new Date("dec 31, 2017 15:37:25").getTime();
-
 		var x = setInterval(function() {
-			var deadline=
-			var now = new Date().getTime();
-			var t = deadline - now;
+			var deadline=Cookies.get("expire");
+			var t = deadline - getTime();
 			var days = Math.floor(t / (1000 * 60 * 60 * 24));
 			var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
 			var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 			var seconds = Math.floor((t % (1000 * 60)) / 1000);
-			document.getElementById("day").innerHTML =days ;
-			document.getElementById("hour").innerHTML =hours;
+			document.getElementById("day").innerHTML = days ;
+			document.getElementById("hour").innerHTML = hours;
 			document.getElementById("minute").innerHTML = minutes; 
-			document.getElementById("second").innerHTML =seconds; 
+			document.getElementById("second").innerHTML = seconds; 
 			if (t < 0) {
 				clearInterval(x);
-				document.getElementById("demo").innerHTML = "TIME UP";
+				Cookies.delete("expire");
+				Cookies.delete("loggedIn");
 				document.getElementById("day").innerHTML ='0';
 				document.getElementById("hour").innerHTML ='0';
 				document.getElementById("minute").innerHTML ='0' ; 
