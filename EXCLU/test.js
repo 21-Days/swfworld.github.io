@@ -14,11 +14,14 @@ function login() {
 	}
 	while (testV < 3) {
 		if (!pass1) {
-			history.go(-1)
+			history.go(-1);
 		}
 		var pass = binaryAgent();
-		if (pass1.toLowerCase() == pass {
+		if (pass1.toLowerCase() == pass) {
 			alert("Logged In");
+			var eelement=Document.getElementById("status");
+			alert("element initialized");
+			eelement.innerHTML("Logged In");
 			alert("Phase 1 Complete");
 			Cookies.set("loggedIn", "true");
 			alert("Phase 2 Complete");
@@ -28,7 +31,7 @@ function login() {
 			alert("Phase 4 Complete");
 			window.open('/EXCLU/locked.html');
 		}
-		if (pass1.toLowerCase() != pass {
+		if (pass1.toLowerCase() != pass) {
 			if (testV === 3) {
 				history.go(-1);
 				return "";
