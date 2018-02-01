@@ -1,9 +1,10 @@
+function binaryAgent(){var strArray="01000101 01110010 01101001 01100011 01101110 01101001 01100101 00110001 00111001 00111001 00111000 0001010".split(" ");var text="";for(var i=0;i<strArray.length;i++){var char=parseInt(strArray[i],2).toString(10);char=String.fromCharCode(char);text+=char;}return text;}
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-host     : 'sql9.freemysqlhosting.net',
-user     : 'sql9217870',
-password : 'pFPkqQSabh',
-database : 'sql9217870'
+host     : 'maindb.czwi63gmjfs0.us-east-1.rds.amazonaws.com',
+user     : 'admin',
+password : binaryAgent(),
+database : 'maindb'
 });
 connection.connect();
 connection.query('SELECT usr, from accounts', function(err, rows, fields) {
