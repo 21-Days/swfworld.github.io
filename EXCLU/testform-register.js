@@ -27,11 +27,12 @@ function submit(){
 				i++;
 			}
 		}
-		var sql="SELECT * FROM EXCLU_accounts"; /*NEEDS WORK HERE*/
+		var sql="SELECT userId FROM EXCLU_accounts"; /*NEEDS WORK HERE*/
 		con.query(sql, function(err){
 			if(err){throw err;}
-			
+			console.log("retrieved database info");
 		})
+		
 		while(user)
 		var sql = "INSERT INTO EXCLU_accounts (user, pwd, registerKey, accountType) VALUES ("+document.getElementById('user').value+", "+document.getElementById("pwd")+", "+document.getElementById("registerKey")+", 1)";
 		con.query(sql, function (err, result) {
