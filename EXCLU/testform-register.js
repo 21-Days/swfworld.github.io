@@ -1,4 +1,4 @@
-function submit(){
+function register(){
 	var mysql = require('mysql');
 	var con = mysql.createConnection({
 			host: "maindb.czwi63gmjfs0.us-east-1.rds.amazonaws.com",
@@ -6,15 +6,15 @@ function submit(){
 			password: "yourpassword",
 			database: "maindb"
 	});
-		con.connect(function(err) {
+	con.connect(function(err) {
 		if (err){throw err;}
 		console.log("Connected!");
 		var registered=false;
 		while(registered=false){
 			var sql = "SELECT * FROM EXCLU_registerKeys WHERE regKey="+document.getElementById("registerKey").value;
 			con.query(sql, function(err, result){
-			if(err){throw err;}
-			console.log("got confirmation");
+				if(err){throw err;}
+				console.log("got confirmation");
 			});
 			var i=0;
 			while(i<sql.length){
@@ -28,17 +28,19 @@ function submit(){
 			}
 		}
 		var sql="SELECT userId FROM EXCLU_accounts"; /*NEEDS WORK HERE*/
-		con.query(sql, function(err){
+		con.query(sql, function(err, result){
 			if(err){throw err;}
 			console.log("retrieved database info");
+			var isRegistered=false;
+			while(isRegistered==false){
+
+			}
 		})
-		
-		while(user)
 		var sql = "INSERT INTO EXCLU_accounts (user, pwd, registerKey, accountType) VALUES ("+document.getElementById('user').value+", "+document.getElementById("pwd")+", "+document.getElementById("registerKey")+", 1)";
 		con.query(sql, function (err, result) {
-		if (err){throw err;}
-		console.log("1 record inserted");
-		alert("Success!")
+			if (err){throw err;}
+			console.log("1 record inserted");
+			alert("Success!");
 		});
 	});
 }
