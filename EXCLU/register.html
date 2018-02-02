@@ -3,6 +3,8 @@
 	<head>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="/resources/js.cookie-2.2.0.min.js"></script>
+	<script src="/EXCLU/register.js"></script>
+	<script src="/EXCLU/login.js"></script>
 	<script type="text/javascript"></script>
 		<style type="text/css">
 		body {
@@ -31,14 +33,20 @@
 			<input class="loginbutton" type="button" onclick="login()" value="Login">
 		</div>
 		<br>
-		<form>
+		<form id="loginForm">
+		</form>
+		<form id="registerForm">
 			<div>
-				Username:
-				<input type="text">
+				Registration Key: <input type="text" id="registerKey"><p class="red" id="regkeythrow"></p>
 			</div>
 			<div>
-				Password:
-				<input type="text">
+				Username: <input type="password" id="user"><p class="red" id="usrthrow"></p>
+			</div>
+			<div>
+				Password: <input type="password" id="pwd">
+			</div>
+			<div>
+				Confirm Password: <input type="text" id="pwdconf"><p class="red" id="pwdthrow">
 			</div>
 			<input class="loginbutton" type="button" onclick="register()" value="Register">
 		</form>
