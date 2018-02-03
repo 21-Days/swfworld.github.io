@@ -7,7 +7,7 @@ password : binaryAgent(),
 database : 'maindb'
 });
 connection.connect();
-connection.query('SELECT usr, from accounts', function(err, rows, fields) {
+connection.query('SELECT user from EXCLU_accounts WHERE user='+document.getElementById("user").value, function(err, rows, fields) {
 if (!err) {console.log('The solution is: ', rows);}
 else {console.log('Error while performing Query.');}
 });
