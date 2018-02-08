@@ -1,14 +1,14 @@
+var flag=false;
 function register(){
 	function binaryAgent(){
 	}
 	var mysql = require('mysql');
 	var con = mysql.createConnection({
 			host: "maindb.czwi63gmjfs0.us-east-1.rds.amazonaws.com",
-			user: "getInfo",
+			user: "admin",
 			password: binaryAgent(),
 			database: "maindb"
-	});
-	var flag=false;
+	});	
 	con.connect(function(err) {
 		if (err){throw err;}
 		console.log("Connected!");
@@ -17,7 +17,7 @@ function register(){
 			var sql = "SELECT * FROM EXCLU_registerKeys WHERE regKey="+document.getElementById("registerKey").value;
 			con.query(sql, function(err, result){
 				if(err){throw err;}
-				console.log("got confirmation");
+				alert("got confirmation");
 				var i=0;
 				while(i<result.length){
 					if(result[i]=="0" || result[i]==0){
