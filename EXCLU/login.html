@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="/resources/js.cookie-2.2.0.min.js"></script>
+		<script src="/EXCLU/testform-register.js"></script>
+		<script src="/EXCLU/testform-login.js"></script>
+		<script type="text/javascript">
+		</script>
+		<style type="text/css">
+			body {
+				margin:   0;
+				overflow: hidden;
+			}
+			#iframe1{
+				height:   100%;
+				left:     0px;
+				position: absolute;
+				top:      0px;
+				width:    100%;
+			}
+			.red {
+				color: red;
+			}
+			.loginbutton {
+				height: 48px;
+				width: 128px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1 class="red" id="status">Not Logged In</h1>
+		</div>
+		<br>
+		<form id="registerForm">
+			<div>
+			Username:<br>
+			<input type="password" id="user"><p class="red" id="usrthrow"></p>
+			</div>
+			<div>
+			Password:<br>
+			<input type="password" id="pwd">
+			</div>
+			<input class="loginbutton" type="button" onclick="login()" value="Login">
+		</form>
+	</body>
+</html>
