@@ -59,3 +59,11 @@ a{
   padding-left: 2%;
   padding-right: 2%;
 }
+.modalbtn{
+  color: red;
+  height: 64px;
+  width: 256px;
+}
+.modalbtn: hover{
+  color: white;
+}
