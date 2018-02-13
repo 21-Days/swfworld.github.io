@@ -9,26 +9,23 @@ function login(){
 		database : 'maindb'
 	});
 	connection.connect(function(err){
-	connection.query('SELECT user from EXCLU_accounts WHERE user='+document.getElementById("user").value+document.getElementById("pwd"), function(err, result) {
+	connection.query('SELECT user from EXCLU_accounts WHERE user='+document.getElementById("user").value, function(err, result){
 		if(!err){
-			var i=0;
-			while(i<result.length){
-				if(result[i]==document.getElementById("user").value){
-					isuser=true;
-					break;
-				}
-				else{
-					isuser=false;
-					break;
-				}
+			if(result[i]==document.getElementById("pwd").value){
+				isuser=true;
+				break;
+			}
+			else{
+				isuser=false;
+				break;
 			}
 		}
 		else {console.log('Error while performing Query.');}
 	});
 	if(isuser==false){
-		return " ";
+		return null;
+		break;
 	}
-	connection.query('', function(err))
 	if(){}
 	});
 	connection.end();
