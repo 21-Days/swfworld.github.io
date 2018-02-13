@@ -9,24 +9,34 @@ function login(){
 		database : 'maindb'
 	});
 	connection.connect(function(err){
-	connection.query('SELECT user from EXCLU_accounts WHERE user='+document.getElementById("user").value, function(err, result){
-		if(!err){
-			if(result[i]==document.getElementById("pwd").value){
-				isuser=true;
-				break;
+		connection.query('SELECT user from EXCLU_accounts WHERE user='+document.getElementById("user").value, function(err, result){
+			if(!err){
+				var split1=result.split("'");
+				console.log("split1 successful");
+				console.log(split1[4]);
+				if(split1[4]==document.getElementById("pwd").value){
+					isuser=true;
+					break;
+				}
+				else{
+					isuser=false;
+					break;
+				}
 			}
-			else{
-				isuser=false;
-				break;
-			}
+			else {console.log('Error while performing Query.');}
+		});
+		if(isuser==true){
+			Cookies.set("loggedIn", "true");
+			console.log("Cookie set");
+			window.location.replace("/EXCLU/locked.html");
+			return null;
+			break;
 		}
-		else {console.log('Error while performing Query.');}
-	});
-	if(isuser==false){
-		return null;
-		break;
-	}
-	if(){}
+		else{
+			return null;
+			break;
+		}
 	});
 	connection.end();
+	alert("Login Failed.");
 }
