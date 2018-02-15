@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>SWOOOP - PLAYCANVAS</title>
+
+		<meta name="description" content="Loop and swoop your bi-plane around the magical island. What&#39;s your highscore?" />
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@playcanvas" />
+		<meta name="twitter:title" content="SWOOOP" />
+		<meta name="twitter:description" content="Loop and swoop your bi-plane around the magical island. What&#39;s your highscore?" />
+		<meta name="twitter:image" content="https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/projects/12/4763/TKYXB8-image-50.jpg" />
+		<meta name="twitter:domain" content="https://playcanv.as/p/JtL2iqIH/" />
+
+		<meta property="og:url" content="https://playcanv.as/p/JtL2iqIH/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="SWOOOP" />
+		<meta property="og:description" content="Loop and swoop your bi-plane around the magical island. What&#39;s your highscore?">
+		<meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/projects/12/4763/TKYXB8-image-50.jpg" />
+		<meta property="og:site_name" content="PlayCanvas" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-title" content="SWOOOP">
+
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://playcanv.as, expires = 2017-12-15 -->
+		<meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2017-12-15" content="AmT5IGTRDfjcWjPdMDa8eWoo0n5S9W7CzfTWSPnGwsnlSkmv0sNrdShGozt6SPGy9s8zAsBx5JmRC2zVRiNYcw4AAABjeyJvcmlnaW4iOiJodHRwczovL3BsYXljYW52LmFzOjQ0MyIsImZlYXR1cmUiOiJXZWJWUjEuMU02MiIsImV4cGlyeSI6MTUxMzMzODIwMSwiaXNTdWJkb21haW4iOnRydWV9">
+
+		<link rel="icon" href="https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/projects/12/4763/TKYXB8-image-25.jpg">
+
+		<link rel="manifest" href="https://playcanv.as/p/JtL2iqIH//manifest.json">
+
+		<link rel="kik-icon" href="https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/projects/12/4763/TKYXB8-image-50.jpg">
+		<link rel="canonical" href="https://playcanv.as/p/JtL2iqIH/">
+
+		<link rel="apple-touch-icon" href="https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/projects/12/4763/TKYXB8-image-25.jpg" />
+
+		<link rel="stylesheet" href="/css/styles.css">
+
+		<style>
+		</style>
+	</head>
+	<body>
+		<div id='container'>
+			<iframe id='frame'
+				src='https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/R2axJfsc/index.html'
+				webkitallowfullscreen='true'
+				mozallowfullscreen='true'
+				allowfullscreen='true'
+				allowvr
+				scrolling='no'
+				frameBorder='0'>
+			</iframe>
+		</div>
+		<div id='footer'>
+			<a class='title' href='https://playcanvas.com/' target='_blank'>
+			<div class='img'></div>
+			</a>
+
+			<div class='views'>
+				<img class='icon' src='https://s3-eu-west-1.amazonaws.com/static.playcanvas.com/images/eye.png' />
+			</div>
+			<div id='fullscreen'></div>
+		</div>
+
+		<!-- FULLSCREEN -->
+		<script type='text/javascript'>
+		var iframe = document.getElementById('frame');
+
+		// aggregate fullscreen to one method
+		iframe.requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+		var button = document.getElementById('fullscreen');
+
+		// detect fullscreen is supported
+		if (iframe.requestFullScreen) {
+		button.classList.add('available');
+		button.addEventListener('click', function() {
+		iframe.requestFullScreen();
+
+		if (kik.enabled) {
+		kik.browser.statusBar(false);
+		}
+		}, false);
+		}
+
+		// focus the iframe window so that keyboard works.
+		// (Chrome Fix: do this after the iframe has loaded
+		// otherwise gamepads don't work)
+		iframe.addEventListener('load', function () {
+		iframe.contentWindow.focus();
+		});
+
+		</script>
+
+		<script src="https://cdn.kik.com/kik/1.0.18/kik.js"></script>
+		<script>
+		kik.enabled = false;
+		</script>
+		<!-- FORMAT VIEWS -->
+		<script>
+		var views = document.querySelector("#viewcount");
+		if (views) {
+		var num = parseInt(views.textContent, 10);
+		views.textContent = num.toLocaleString();
+		}
+		</script>
+		<script src="//cdn.webglstats.com/stat.js" defer="defer" async="async"></script>
+	</body>
+</html>
