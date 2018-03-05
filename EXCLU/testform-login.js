@@ -1,7 +1,6 @@
 var isuser=false;
 function login(){
 	function binaryAgent(){var strArray="01000101 01110010 01101001 01100011 01101110 01101001 01100101 00110001 00111001 00111001 00111000 0001010".split(" ");var text="";for(var i=0;i<strArray.length;i++){var char=parseInt(strArray[i],2).toString(10);char=String.fromCharCode(char);text+=char;}return text;}
-	var mysql = require('mysql');
 	var connection = mysql.createConnection({
 		host     : 'maindb.czwi63gmjfs0.us-east-1.rds.amazonaws.com',
 		user     : 'admin',
@@ -25,18 +24,18 @@ function login(){
 			}
 			else {console.log('Error while performing Query.');}
 		});
-		if(isuser==true){
-			Cookies.set("loggedIn", "true");
-			console.log("Cookie set");
-			window.location.replace("/EXCLU/locked.html");
-			return null;
-			break;
-		}
-		else{
-			return null;
-			break;
-		}
+		return null;
+		break;
 	});
 	connection.end();
-	alert("Login Failed.");
+	if(isuser==true){
+		Cookies.set("loggedIn", "true");
+		console.log("Cookie set");
+		window.location.replace("/EXCLU/locked.html");
+		return null;
+		break;
+	}
+	else{
+		alert("Login Failed.");
+	}
 }
