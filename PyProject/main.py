@@ -6,7 +6,27 @@ main.tracer(0, 0)
 screen=main.getscreen()
 framespeed=30
 
-screen.winfo_pointery())
+def inclevel():
+	framespeed+=1
+	return True
+
+def drawbackground(inp):
+	if(inp=='red'):
+		main.bgcolor("#FF0000")
+	if(inp=='rg1'):
+		main.bgcolor(204,51,0)
+	if(inp=='rg2'):
+		main.bgcolor(153,102,0)
+	if(inp=='rg3'):
+		main.bgcolor(102,153,0)
+	if(inp=='rg4'):
+		main.bgcolor(51,204,0)
+	if(inp=='green'):
+		main.bgcolor(0,255,0)
+	if(inp=='gb1'):
+		main.bgcolor(0,204,51)
+	if(inp=='gb2'):
+		main.bgcolor(0,153,102)
 	if(inp=='gb3'):
 		main.bgcolor(0,102,153)
 	if(inp=='gb4'):
@@ -15,7 +35,7 @@ screen.winfo_pointery())
 		main.bgcolor(0,0,255)
 
 def drawspike():
-	exit()
+exit()
 
 def startbtn(width, height, x, y):
 	cursor=Turtle()
@@ -41,13 +61,9 @@ def getPos(x,y):
 
 def renderframe():
 	main.update()
-	#hnn=startbtn(128, 32, -64, 22)
-	main.write("Click to start!", align="center", font=("Arial", 12, "normal"))
-	main.update()
-	main.showturtle()
-	screen.onscreenclick(screen.bgcolor("red"))
-
-while(True):
-	main.write(screen.winfo_pointerx()+", "+screen.winfo_pointery())
-	main.update()
-	main.mainloop()
+#hnn=startbtn(128, 32, -64, 22)
+main.write("Click to start!", align="center", font=("Arial", 12, "normal"))
+main.update()
+main.showturtle()
+screen.onscreenclick(screen.bgcolor("red"))
+main.mainloop()
