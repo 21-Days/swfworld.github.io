@@ -6,7 +6,7 @@ function go(){
 	var normlink = document.getElementById("searchbox").value;
 	// Encode the String
 	var encodedlink = Base64.encode(normlink);
-	console.log(encodedString);
+	console.log(encodedlink);
 	document.getElementById("pxy").src="http://unbpxy.000webhost.gq/phpxy/index.php?q="+encodedlink;
 }
 
