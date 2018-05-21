@@ -11,6 +11,7 @@ function go(){
 	var encodedlink = Base64.encode(normlink);
 	console.log(encodedlink);
 	var iframe=document.getElementById("pxy");
+	document.getElementById("mainelems").style.display="none";
 	iframe.src="http://unbpxy.000webhost.gq/phpxy/index.php?q="+encodedlink;
 	iframe.style.display="block";
 }
