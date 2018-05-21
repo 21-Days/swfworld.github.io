@@ -12,7 +12,7 @@ function go(){
 	console.log(encodedlink);
 	var iframe=document.getElementById("pxy");
 	document.getElementById("mainelems").style.display="none";
-	iframe.src="http://unbpxy.000webhost.gq/phpxy/index.php?q="+encodedlink;
+	iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
 	iframe.style.display="block";
 }
 
