@@ -13,7 +13,6 @@ input:hover{
 input:focus{
     border-color:#4d90fe;
 }
-
 input[type="submit"] {
     border-radius: 2px;
     background: #f2f2f2;
@@ -22,7 +21,7 @@ input[type="submit"] {
     cursor: default;
     font-size: 14px;
     font-weight: bold;
-    width: 100px;
+    width: auto;
     padding: 0 16px;
     height:36px;
 }
@@ -36,6 +35,5 @@ input[type="submit"]:hover {
 .center {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
     padding: 10px;
 }
