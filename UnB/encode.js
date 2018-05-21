@@ -3,7 +3,7 @@ var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456
 
 function go(){
 	// Define the string
-	var normlink = document.getElementById("searchbox").value();
+	var normlink = document.getElementById("searchbox").value;
 	// Encode the String
 	var encodedlink = Base64.encode(normlink);
 	console.log(encodedString);
