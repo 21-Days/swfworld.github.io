@@ -10,7 +10,6 @@ function go(){
 	var normlink = document.getElementById("searchbox").value;
 	var error = document.getElementById("errorbox");
 	if(normlink == ""){
-		error.value="ERROR: BAD URL";
 		error.style.display="block";
 		break
 	}
