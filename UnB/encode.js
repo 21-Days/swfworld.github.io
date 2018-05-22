@@ -4,22 +4,22 @@ function onload(){
 	document.getElementById("pxy").style.display="none";
 	document.getElementById("errorbox").style.display="none";
 }
-
-function go(){
-	// Define the string
-	var normlink = document.getElementById("searchbox").value;
-	var error = document.getElementById("errorbox");
-	if(normlink == ""){
-		error.style.display="block";
+function check(){
+	if(document.getElementById("searchbox").value==""){
+		document.getElementById("errorbox").style.display="block";
 	}
 	else{
-		// Encode the String
-		var encodedlink = Base64.encode(normlink);
-		console.log(encodedlink);
-		var iframe=document.getElementById("pxy");
-		document.getElementById("mainelems").style.display="none";
-		iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
-		iframe.style.display="block";
+		go();
+	}
+}
+function go(){
+	var normlink = document.getElementById("searchbox").value;
+	var encodedlink = Base64.encode(normlink);
+	console.log(encodedlink);
+	var iframe=document.getElementById("pxy");
+	document.getElementById("mainelems").style.display="none";
+	iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
+	iframe.style.display="block";
 	}
 }
 
