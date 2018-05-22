@@ -51,11 +51,15 @@ img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.centerbtns {
+.centerbtndiv {
 	margin: auto;
-	width: 50%;
 	padding: 10px;
 	text-align: center;
+	display: block;
+}
+.centerbtns{
+	margin: auto;
+	padding: 10px;
 	display: block;
 }
 .redfont {
