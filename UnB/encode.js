@@ -11,7 +11,6 @@ function go(){
 	var error = document.getElementById("errorbox");
 	if(normlink == ""){
 		error.style.display="block";
-		break
 	}
 	else{
 		// Encode the String
