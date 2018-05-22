@@ -3,17 +3,28 @@ var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456
 function onload(){
 	document.getElementById("pxy").style.display="none";
 }
-function go(){
+function go(num){
 	if (!document.getElementById("searchbox").value){
 	}
 	else {
-		var normlink = document.getElementById("searchbox").value;
-		var encodedlink = Base64.encode(normlink);
-		console.log(encodedlink);
-		var iframe=document.getElementById("pxy");
-		document.getElementById("mainelems").style.display="none";
-		iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
-		iframe.style.display="block";
+		if(num==1){
+			var normlink = document.getElementById("searchbox").value;
+			var encodedlink = Base64.encode(normlink);
+			console.log(encodedlink);
+			var iframe=document.getElementById("pxy");
+			document.getElementById("mainelems").style.display="none";
+			iframe.src="http://phpxy.gq/phpxy/index.php?q="+encodedlink;
+			iframe.style.display="block";
+		}
+		else if(num==2){
+			var normlink = document.getElementById("searchbox").value;
+			var encodedlink = Base64.encode(normlink);
+			console.log(encodedlink);
+			var iframe=document.getElementById("pxy");
+			document.getElementById("mainelems").style.display="none";
+			iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
+			iframe.style.display="block";
+		}
 	}
 }
 /* Decode the String
