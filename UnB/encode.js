@@ -4,14 +4,6 @@ function onload(){
 	document.getElementById("pxy").style.display="none";
 	document.getElementById("errorbox").style.display="none";
 }
-function check(){
-	if(document.getElementById("searchbox").value==""){
-		document.getElementById("errorbox").style.display="block";
-	}
-	else{
-		go();
-	}
-}
 function go(){
 	var normlink = document.getElementById("searchbox").value;
 	var encodedlink = Base64.encode(normlink);
