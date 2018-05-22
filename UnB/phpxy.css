@@ -25,10 +25,11 @@ input[type="submit"] {
 	cursor: default;
 	font-size: 14px;
 	font-weight: bold;
-	width: auto;
+	width: 50%;
 	padding: 0 16px;
 	height:36px;
-	display: block;
+	display: inline-block;
+	float: left;
 }
 input[type="submit"]:hover {
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -56,8 +57,8 @@ img {
 	margin: auto;
 	padding: 10px;
 	width: 100%;
-	display: block;
 }
+
 #pxy{
 	height:   98%;
 	left:     0px;
