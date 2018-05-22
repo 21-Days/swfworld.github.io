@@ -4,15 +4,18 @@ function onload(){
 	document.getElementById("pxy").style.display="none";
 }
 function go(){
-	var normlink = document.getElementById("searchbox").value;
-	var encodedlink = Base64.encode(normlink);
-	console.log(encodedlink);
-	var iframe=document.getElementById("pxy");
-	document.getElementById("mainelems").style.display="none";
-	iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
-	iframe.style.display="block";
+	if (!document.getElementById("searchbox").value){
+	}
+	else {
+		var normlink = document.getElementById("searchbox").value;
+		var encodedlink = Base64.encode(normlink);
+		console.log(encodedlink);
+		var iframe=document.getElementById("pxy");
+		document.getElementById("mainelems").style.display="none";
+		iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
+		iframe.style.display="block";
+	}
 }
-
 /* Decode the String
 var decodedString = Base64.decode(encodedString);
 console.log(decodedString); // Outputs: "Hello World!" */
