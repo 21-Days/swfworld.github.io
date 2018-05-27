@@ -82,26 +82,23 @@ img {
 .divtop{
 	position: fixed;
 	top:0;
-	left:0;
 	width: 100%;
-	
 	margin:0;
-	
-	z-index: 2100000000;
+	z-index: 9999999999;
 	-moz-user-select: none; 
 	-khtml-user-select: none; 
 	-webkit-user-select: none; 
 	-o-user-select: none; 
-	
 	border-bottom: 1px solid #151515;
 	background: #d9d9d9;
-	height: 30px;
-	line-height: 30px;
+	height: 36px;
+	line-height: 36px;
+	text-align:center;
 }
 #pxy{
 	height:   100%;
 	left:     0px;
 	position: absolute;
-	top:      30px;
+	top:      36px;
 	width:    100%;
 }
