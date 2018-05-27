@@ -30,6 +30,32 @@ function go(num){
 		}
 	}
 }
+function tinysearch(num){
+	if (!document.getElementById("searchbox2").value){
+	}
+	else {
+		if(num==1){
+			var normlink = document.getElementById("searchbox2").value;
+			var encodedlink = Base64.encode(normlink);
+			console.log(encodedlink);
+			var iframe=document.getElementById("pxy");
+			document.getElementById("topdiv").style.display="block";
+			document.getElementById("mainelems").style.display="none";
+			iframe.src="http://phpxy.gq/phpxy/index.php?q="+encodedlink;
+			iframe.style.display="block";
+		}
+		else if(num==2){
+			var normlink = document.getElementById("searchbox2").value;
+			var encodedlink = Base64.encode(normlink);
+			console.log(encodedlink);
+			var iframe=document.getElementById("pxy");
+			document.getElementById("topdiv").style.display="block";
+			document.getElementById("mainelems").style.display="none";
+			iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
+			iframe.style.display="block";
+		}
+	}
+}
 function ret(){
 	var decodedString = Base64.decode(encodedString);
 	console.log(decodedString);
