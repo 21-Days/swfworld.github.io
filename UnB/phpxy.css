@@ -4,12 +4,17 @@ body {
 }
 input{
 	border: none;
-	padding: 10px;
 	margin: 10px;
 	height: 20px;
 	width: 720px;
 	border:1px solid #eaeaea;
 	outline:none;
+}
+.main{
+	padding=10px;
+}
+.topsearch{
+	padding=5px;
 }
 input:hover{
 	border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
