@@ -55,6 +55,25 @@ img {
 .centerbtns{
 	text-align: center;
 }
+.divtop{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	
+	margin:0;
+	
+	z-index: 2100000000;
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-o-user-select: none; 
+	
+	border-bottom: 1px solid #151515;
+	background: #d9d9d9;
+	height: 30px;
+	line-height: 30px;
+}
 #pxy{
 	height:   100%;
 	left:     0px;
