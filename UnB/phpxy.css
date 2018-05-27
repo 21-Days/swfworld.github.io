@@ -27,7 +27,7 @@ input[type="submit"] {
 	font-weight: bold;
 	width: auto;
 	padding: 0 16px;
-	height:36px;
+	height: 36px;
 }
 input[type="submit"]:hover {
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -50,15 +50,15 @@ img {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 .centerbtns{
-	margin: auto;
-	padding: 0px;
+	text-align: center;
 }
 #pxy{
-	height:   98%;
+	height:   100%;
 	left:     0px;
 	position: absolute;
-	top:      0px;
+	top:      36px;
 	width:    100%;
 }
