@@ -6,14 +6,15 @@ input{
 	border: none;
 	margin: 10px;
 	height: 20px;
-	width: 720px;
 	border:1px solid #eaeaea;
 	outline:none;
 }
 .main{
 	padding=10px;
+	width:720px;
 }
 .topsearch{
+	width:512px;
 	padding=5px;
 }
 input:hover{
