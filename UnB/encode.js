@@ -13,6 +13,7 @@ function go(num){
 			var encodedlink = Base64.encode(normlink);
 			console.log(encodedlink);
 			var iframe=document.getElementById("pxy");
+			document.getElementById("topdiv").style.display="block";
 			document.getElementById("mainelems").style.display="none";
 			iframe.src="http://phpxy.gq/phpxy/index.php?q="+encodedlink;
 			iframe.style.display="block";
@@ -22,6 +23,7 @@ function go(num){
 			var encodedlink = Base64.encode(normlink);
 			console.log(encodedlink);
 			var iframe=document.getElementById("pxy");
+			document.getElementById("topdiv").style.display="block";
 			document.getElementById("mainelems").style.display="none";
 			iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
 			iframe.style.display="block";
