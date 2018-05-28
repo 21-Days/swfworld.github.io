@@ -28,6 +28,9 @@ input:focus{
 	height: 20px;
 	display: inline-block;
 }
+.inline{
+	diplay: inline-block;
+}
 .submit {
 	border-radius: 2px;
 	background: #f2f2f2;
