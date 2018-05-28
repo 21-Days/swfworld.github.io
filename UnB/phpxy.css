@@ -6,17 +6,16 @@ input{
 	border: none;
 	margin: 10px;
 	height: 20px;
-	padding=10px;
 	border:1px solid #eaeaea;
 	outline:none;
 }
 .main{
-	padding=10px;
-	width:720px;
+	padding: 10px;
+	width: 720px;
 }
 .topsearch{
 	width:512px;
-	padding=5px;
+	padding: 2px;
 }
 input:hover{
 	border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
