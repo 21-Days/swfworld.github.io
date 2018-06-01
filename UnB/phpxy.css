@@ -104,6 +104,14 @@ img {
 	line-height: 40px;
 	text-align:center;
 }
+.nuttynut{
+	position: absolute;
+	top: 0;
+}
+.innernut{
+	top: 0;
+	position:absolute;
+}
 #pxy{
 	height:   100%;
 	left:     0px;
