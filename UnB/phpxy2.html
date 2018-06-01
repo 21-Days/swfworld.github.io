@@ -9,11 +9,15 @@
 	<body onload="onload()">
 		<div class="divtop" id="topdiv">
 			<div class="inline">
-				<input class="bf" type="image" src="/resources/Back_arrow.png" height="30" width="30" onclick="back()"/>
-				<input class="bf" type="image" src="/resources/Forward_arrow.png" height="30" width="30" onclick="forward()"/>
-				<input class="submit2" type="submit" value="Home" onclick="window.location.replace('phpxy2.html');"/>
-				<input class="topsearch" type="text" id="searchbox2" value=""/>
-				<input class="submit2" type="submit" value="Go!" onclick="tinysearch(2);"/>
+				<div class="nuttynut">
+					<input class="bf" type="image" src="/resources/Back_arrow.png" height="30" width="30" onclick="back()"/>
+					<input class="bf" type="image" src="/resources/Forward_arrow.png" height="30" width="30" onclick="forward()"/>
+				</div>
+				<div class="innernut">
+					<input class="submit2" type="submit" value="Home" onclick="window.location.replace('phpxy2.html');"/>
+					<input class="topsearch" type="text" id="searchbox2" value=""/>
+					<input class="submit2" type="submit" value="Go!" onclick="tinysearch(2);"/>
+				</div>
 			</div>
 		</div>
 		<iframe id="pxy" src="" frameborder="0"></iframe>
