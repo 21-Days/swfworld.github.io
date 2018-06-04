@@ -115,11 +115,13 @@ img {
 	top: 5px;
 	display: inline-block;
 	margin: 5px;
+	overflow: visible;
 	
 }
 .innernut{
 	top: 1px;
 	display: inline-block;
+	overflow: none;
 }
 #pxy{
 	height:   100%;
