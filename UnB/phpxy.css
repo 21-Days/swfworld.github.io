@@ -112,10 +112,13 @@ img {
 .nuttynut{
 	position: absolute;
 	top: 0;
+	
 }
 .innernut{
 	top: 0;
 	position:absolute;
+	margin-right: 33%;
+	margin-left: 33%;
 }
 #pxy{
 	height:   100%;
