@@ -110,12 +110,13 @@ img {
 	text-align:center;
 }
 .nuttynut{
-	top: 0;
+	top: 5px;
 	display: inline-block;
+	margin: 5px;
 	
 }
 .innernut{
-	top: 0;
+	top: 1px;
 	display: inline-block;
 }
 #pxy{
