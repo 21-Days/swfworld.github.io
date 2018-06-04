@@ -126,3 +126,7 @@ img {
 	top:      40px;
 	width:    100%;
 }
+.bf{
+	margin: 2px;
+	display: inline-block;
+}
