@@ -14,6 +14,7 @@ input[type="text"]{
 	width: 720px;
 }
 .topsearch{
+	top: 0;
 	width:512px;
 	padding: 2px;
 }
@@ -27,6 +28,7 @@ input:focus{
 	width: 30px;
 	height: 30px;
 	display: inline-block;
+	margin: 2px;
 }
 .inline{
 	diplay: inline-block;
@@ -125,8 +127,4 @@ img {
 	position: absolute;
 	top:      40px;
 	width:    100%;
-}
-.bf{
-	margin: 2px;
-	display: inline-block;
 }
