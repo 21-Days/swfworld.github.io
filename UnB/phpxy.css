@@ -110,15 +110,13 @@ img {
 	text-align:center;
 }
 .nuttynut{
-	position: absolute;
 	top: 0;
+	display: inline-block;
 	
 }
 .innernut{
 	top: 0;
-	position:absolute;
-	margin-right: 33%;
-	margin-left: 33%;
+	display: inline-block;
 }
 #pxy{
 	height:   100%;
