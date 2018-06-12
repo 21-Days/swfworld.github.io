@@ -120,7 +120,7 @@ img {
 }
 .innernut{
 	top: 1px;
-	float: right;
+	float: left;
 	width: 50%;
 	overflow: none;
 }
