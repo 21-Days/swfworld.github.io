@@ -114,12 +114,14 @@ img {
 .nuttynut{
 	top: 5px;
 	float: left;
+	width: 50%;
 	overflow: none;
 	
 }
 .innernut{
 	top: 1px;
 	float: right;
+	width: 50%;
 	overflow: none;
 }
 #pxy{
