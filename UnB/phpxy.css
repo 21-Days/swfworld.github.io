@@ -113,15 +113,15 @@ img {
 }
 .nuttynut{
 	top: 5px;
-	float: left;
-	width: 50%;
+	float: right;
+	width: 25%;
 	overflow: none;
 	
 }
 .innernut{
 	top: 1px;
-	float: left;
-	width: 50%;
+	float: none;
+	width: 25%%;
 	overflow: none;
 }
 #pxy{
