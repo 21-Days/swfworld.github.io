@@ -113,14 +113,13 @@ img {
 }
 .nuttynut{
 	top: 5px;
-	display: inline-block;
-	margin: 5px;
-	overflow: visible;
+	float: left;
+	overflow: none;
 	
 }
 .innernut{
 	top: 1px;
-	display: inline-block;
+	float: right;
 	overflow: none;
 }
 #pxy{
