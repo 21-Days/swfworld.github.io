@@ -1,6 +1,20 @@
 function onload(){
 	document.getElementById("pxy").style.display="none";
 	document.getElementById("topdiv").style.display="none";
+	var input = document.getElementById("searchbox");
+	input.addEventListener("keyup", function(event) {
+		event.preventDefault();
+		if (event.keyCode === 13) {
+			document.getElementById("subbtn").click();
+		}
+	});
+	var input = document.getElementById("searchbox2");
+	input.addEventListener("keyup", function(event) {
+		event.preventDefault();
+		if (event.keyCode === 13) {
+			document.getElementById("subbtn2").click();
+		}
+	});
 }
 function google(num){
 	if (!document.getElementById("searchbox").value){
