@@ -1,8 +1,16 @@
+var baseurl="";
+
 window.onunload = function(){
 	document.getElementById("pxy").src="about:blank";
 	document.getElementById("searchbox").value="";
 }
-function onload(){
+function onload(realnum){
+	if(realnum==1){
+		baseurl="http://unbpxy.000webhostapp.com/phpxy/index.php?q=";
+	}
+	else{
+		baseurl="http://phpxy.gq/phpxy/index.php?q=";
+	}
 	document.getElementById("pxy").style.display="none";
 	document.getElementById("topdiv").style.display="none";
 	var input = document.getElementById("searchbox");
@@ -103,5 +111,5 @@ function ret(){
 	console.log(decodedString);
 }
 function sbrefresh(url){
-	document.getElementById("searchbox2").value=url;
+	document.getElementById("searchbox2").value=Base64.decode(url.replace(baseurl, ""));
 }
