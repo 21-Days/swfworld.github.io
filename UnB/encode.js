@@ -1,3 +1,7 @@
+window.onunload = function(){
+	document.getElementById("pxy").src="about:blank";
+	document.getElementById("searchbox").value="";
+}
 function onload(){
 	document.getElementById("pxy").style.display="none";
 	document.getElementById("topdiv").style.display="none";
@@ -98,7 +102,6 @@ function ret(){
 	var decodedString = Base64.decode(encodedString);
 	console.log(decodedString);
 }
-function reset(){
-	document.getElementById("pxy").src="about:blank";
-	document.getElementById("searchbox").value="";
+function sbrefresh(url){
+	document.getElementById("searchbox2").value=url;
 }
