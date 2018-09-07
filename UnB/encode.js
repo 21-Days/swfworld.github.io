@@ -98,3 +98,7 @@ function ret(){
 	var decodedString = Base64.decode(encodedString);
 	console.log(decodedString);
 }
+function reset(){
+	document.getElementById("pxy").src="about:blank";
+	document.getElementById("searchbox").value="";
+}
