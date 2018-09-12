@@ -1,5 +1,10 @@
 var baseurl="";
 
+function iframeload(){
+	var iframe=document.getElementById("pxy");
+	$(iframe).contents().find("foreverproxy-top").remove();
+}
+
 window.onunload = function(){
 	document.getElementById("pxy").src="about:blank";
 	document.getElementById("searchbox").value="";
