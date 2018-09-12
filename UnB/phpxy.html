@@ -5,6 +5,7 @@
 		<link rel="icon" type="image/png" href="/resources/googleicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="phpxy.css"/>
 		<script src="encode.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	</head>
 	<body onload="onload()">
 		<div class="divtop" id="topdiv">
@@ -20,7 +21,7 @@
 				</div>
 			</div>
 		</div>
-		<iframe style=".foreverproxy-border-bottom{display:none;}" id="pxy" onLoad="sbrefresh(this.contentWindow.location);" src="" frameborder="0"></iframe>
+		<iframe id="pxy" onLoad="sbrefresh(this.contentWindow.location);" src="" frameborder="0"></iframe>
 		<div class="main center" id="mainelems">
 			<img src="/resources/googleric.png">
 			<div class="search">
