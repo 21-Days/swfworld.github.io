@@ -1,11 +1,5 @@
 var baseurl="";
 
-function iframeload(url){
-	document.getElementById("searchbox2").value=Base64.decode(url.replace(baseurl, ""));
-	var iframe=document.getElementById("pxy");
-	$(iframe).contents().find("foreverproxy-top").remove();
-}
-
 window.onunload = function(){
 	document.getElementById("pxy").src="about:blank";
 	document.getElementById("searchbox").value="";
@@ -33,6 +27,11 @@ function onload(realnum){
 			document.getElementById("subbtn2").click();
 		}
 	});
+}
+function iframeload(url){
+	var iframe=document.getElementById("pxy");
+	document.getElementById("searchbox2").value=Base64.decode(iframe.src.replace(baseurl, ""));
+	$(iframe).contents().find("foreverproxy-top").remove();
 }
 function google(num){
 	if (!document.getElementById("searchbox").value){
