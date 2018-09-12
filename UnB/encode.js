@@ -87,7 +87,7 @@ function go(num){
 }
 function tinysearch(num){
 	if (!document.getElementById("searchbox2").value){
-		alert("Searchbox empty!")
+		alert("Searchbox empty!");
 	}
 	else {
 		if(num==1){
