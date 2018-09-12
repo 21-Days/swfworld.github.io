@@ -30,7 +30,7 @@ function onload(realnum){
 	var iframe=document.getElementById("pxy");
 	var remove=iframe.contentWindow.document.getElementById("foreverproxy-top");
 	var remove2=iframe.contentWindow.document.getElementById("foreverproxy-bottom");
-	iframe.addEventListener("load", function{
+	iframe.addEventListener("load", function(){
 		document.getElementById("searchbox2").value=Base64.decode(iframe.src.replace(baseurl, ""));
 		remove.style.display="none";
 		remove2.style.display="none";
