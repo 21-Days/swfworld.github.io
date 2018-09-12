@@ -31,6 +31,7 @@ function onload(realnum){
 function iframeload(url){
 	var iframe=document.getElementById("pxy");
 	var remove=iframe.contentWindow.document.getElementById("foreverproxy-top");
+	var remove2=iframe.contentWindow.document.getElementById("foreverproxy-bottom");
 	document.getElementById("searchbox2").value=Base64.decode(iframe.src.replace(baseurl, ""));
 	remove.style.display="none";
 }
