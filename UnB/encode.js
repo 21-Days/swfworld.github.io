@@ -30,8 +30,9 @@ function onload(realnum){
 }
 function iframeload(url){
 	var iframe=document.getElementById("pxy");
+	var remove=iframe.contentWindow.document.getElementById("foreverproxy-top");
 	document.getElementById("searchbox2").value=Base64.decode(iframe.src.replace(baseurl, ""));
-	$(iframe).contents().find("foreverproxy-top").remove();
+	remove.style.display="none";
 }
 function google(num){
 	if (!document.getElementById("searchbox").value){
