@@ -42,6 +42,7 @@ function google(num){
 			document.getElementById("topdiv").style.display="block";
 			document.getElementById("mainelems").style.display="none";
 			iframe.src="https://phx.4everproxy.com/direct/"+encodedlink;
+			$(iframe).contents().find("foreverproxy-top").remove();
 			iframe.style.display="block";
 		}
 		else if(num==2){
@@ -86,6 +87,7 @@ function go(num){
 }
 function tinysearch(num){
 	if (!document.getElementById("searchbox2").value){
+		alert("Searchbox empty!")
 	}
 	else {
 		if(num==1){
