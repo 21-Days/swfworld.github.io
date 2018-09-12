@@ -31,7 +31,7 @@ function onload(realnum){
 	var remove=iframe.contentWindow.document.getElementById("foreverproxy-top");
 	var remove2=iframe.contentWindow.document.getElementById("foreverproxy-bottom");
 	iframe.addEventListener("load", function(){
-		document.getElementById("searchbox2").value=Base64.decode(iframe.src.replace(baseurl, ""));
+		document.getElementById("searchbox2").value=atob.decode(iframe.src.replace(baseurl, ""));
 		remove.style.display="none";
 		remove2.style.display="none";
 	});
@@ -117,6 +117,6 @@ function tinysearch(num){
 	}
 }
 function ret(){
-	var decodedString = Base64.decode(encodedString);
+	var decodedString = atob.decode(encodedString);
 	console.log(decodedString);
 }
