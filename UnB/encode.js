@@ -1,7 +1,7 @@
 var baseurl="";
 
-function iframeload(){
-	sbrefresh(this.contentWindow.location);
+function iframeload(url){
+	document.getElementById("searchbox2").value=Base64.decode(url.replace(baseurl, ""));
 	var iframe=document.getElementById("pxy");
 	$(iframe).contents().find("foreverproxy-top").remove();
 }
@@ -117,7 +117,4 @@ function tinysearch(num){
 function ret(){
 	var decodedString = Base64.decode(encodedString);
 	console.log(decodedString);
-}
-function sbrefresh(url){
-	document.getElementById("searchbox2").value=Base64.decode(url.replace(baseurl, ""));
 }
