@@ -1,6 +1,7 @@
 var baseurl="";
 
 function iframeload(){
+	sbrefresh(this.contentWindow.location);
 	var iframe=document.getElementById("pxy");
 	$(iframe).contents().find("foreverproxy-top").remove();
 }
