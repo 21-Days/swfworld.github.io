@@ -1,12 +1,5 @@
 var baseurl="";
 
-var iframe=document.getElementById("pxy");
-var remove=iframe.contentWindow.document.getElementById("foreverproxy-top");
-var remove2=iframe.contentWindow.document.getElementById("foreverproxy-bottom");
-iframe.addEventListener("load", function{
-document.getElementById("searchbox2").value=Base64.decode(iframe.src.replace(baseurl, ""));
-remove.style.display="none";remove2.style.display="none";});
-
 window.onunload = function(){
 	document.getElementById("pxy").src="about:blank";
 	document.getElementById("searchbox").value="";
@@ -33,6 +26,14 @@ function onload(realnum){
 		if (event.keyCode === 13) {
 			document.getElementById("subbtn2").click();
 		}
+	});
+	var iframe=document.getElementById("pxy");
+	var remove=iframe.contentWindow.document.getElementById("foreverproxy-top");
+	var remove2=iframe.contentWindow.document.getElementById("foreverproxy-bottom");
+	iframe.addEventListener("load", function{
+		document.getElementById("searchbox2").value=Base64.decode(iframe.src.replace(baseurl, ""));
+		remove.style.display="none";
+		remove2.style.display="none";
 	});
 }
 function google(num){
