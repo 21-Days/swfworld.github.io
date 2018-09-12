@@ -9,7 +9,7 @@ function onload(realnum){
 		baseurl="http://unbpxy.000webhostapp.com/phpxy/index.php?q=";
 	}
 	else{
-		baseurl="http://phpxy.gq/phpxy/index.php?q=";
+		baseurl="https://phx.4everproxy.com/direct/";
 	}
 	document.getElementById("pxy").style.display="none";
 	document.getElementById("topdiv").style.display="none";
@@ -41,7 +41,7 @@ function google(num){
 			var iframe=document.getElementById("pxy");
 			document.getElementById("topdiv").style.display="block";
 			document.getElementById("mainelems").style.display="none";
-			iframe.src="http://phpxy.gq/phpxy/index.php?q="+encodedlink;
+			iframe.src="https://phx.4everproxy.com/direct/"+encodedlink;
 			iframe.style.display="block";
 		}
 		else if(num==2){
@@ -69,7 +69,7 @@ function go(num){
 			var iframe=document.getElementById("pxy");
 			document.getElementById("topdiv").style.display="block";
 			document.getElementById("mainelems").style.display="none";
-			iframe.src="http://phpxy.gq/phpxy/index.php?q="+encodedlink;
+			iframe.src="http://phx.4everproxy.com/direct/"+encodedlink;
 			iframe.style.display="block";
 		}
 		else if(num==2){
@@ -93,7 +93,7 @@ function tinysearch(num){
 			var encodedlink = btoa(normlink);
 			console.log(encodedlink);
 			var iframe=document.getElementById("pxy");
-			iframe.src="http://phpxy.gq/phpxy/index.php?q="+encodedlink;
+			iframe.src="http://phx.4everproxy.com/direct/"+encodedlink;
 			iframe.style.display="block";
 		}
 		else if(num==2){
