@@ -130,4 +130,5 @@ img {
 	position: absolute;
 	top:      40px;
 	width:    100%;
+	display: none;
 }
