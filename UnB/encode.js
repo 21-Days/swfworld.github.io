@@ -35,12 +35,10 @@ function google(num){
 	}
 	else {
 		var normlink = document.getElementById("searchbox").value;
-		var n2="https://www.google.com/search?q="+normlink;
 		var iframe=document.getElementById("pxy");
 		document.getElementById("topdiv").style.display="block";
 		document.getElementById("mainelems").style.display="none";
-		iframe.src="https://node.roadkillsanta.repl.co/proxy/"+normlink;
-		$(iframe).contents().find("foreverproxy-top").remove();
+		iframe.src="https://node.roadkillsanta.repl.co/pxy/"+"https://www.google.com/search?q="+normlink;
 		iframe.style.display="block";
 	}
 }
@@ -50,39 +48,10 @@ function go(num){
 	}
 	else {
 		var normlink = document.getElementById("searchbox").value;
-		var encodedlink = btoa(normlink);
-		console.log(encodedlink);
 		var iframe=document.getElementById("pxy");
 		document.getElementById("topdiv").style.display="block";
 		document.getElementById("mainelems").style.display="none";
-		iframe.src="https://node.roadkillsanta.repl.co/proxy/"+encodedlink;
+		iframe.src="https://node.roadkillsanta.repl.co/pxy/"+encodedlink;
 		iframe.style.display="block";
 	}
-}
-function tinysearch(num){
-	if (!document.getElementById("searchbox2").value){
-		alert("Searchbox empty!");
-	}
-	else {
-		if(num==1){
-			var normlink = document.getElementById("searchbox2").value;
-			var encodedlink = btoa(normlink);
-			console.log(encodedlink);
-			var iframe=document.getElementById("pxy");
-			iframe.src="http://phx.4everproxy.com/direct/"+encodedlink;
-			iframe.style.display="block";
-		}
-		else if(num==2){
-			var normlink = document.getElementById("searchbox2").value;
-			var encodedlink = btoa(normlink);
-			console.log(encodedlink);
-			var iframe=document.getElementById("pxy");
-			iframe.src="http://unbpxy.000webhostapp.com/phpxy/index.php?q="+encodedlink;
-			iframe.style.display="block";
-		}
-	}
-}
-function ret(){
-	var decodedString = atob.decode(encodedString);
-	console.log(decodedString);
 }
