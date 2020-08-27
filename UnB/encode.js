@@ -5,14 +5,8 @@ window.onunload = function(){
 	document.getElementById("searchbox").value="";
 }
 function onload(realnum){
-	if(realnum==1){
-		baseurl="http://unbpxy.000webhostapp.com/phpxy/index.php?q=";
-	}
-	else{
-		baseurl="https://phx.4everproxy.com/direct/";
-	}
+	baseurl="https://node.roadkillsanta.repl.co/pxy/";
 	document.getElementById("pxy").style.display="none";
-	document.getElementById("topdiv").style.display="none";
 	var input = document.getElementById("searchbox");
 	input.addEventListener("keyup", function(event) {
 		event.preventDefault();
@@ -36,7 +30,6 @@ function google(num){
 	else {
 		var normlink = document.getElementById("searchbox").value;
 		var iframe=document.getElementById("pxy");
-		document.getElementById("topdiv").style.display="block";
 		document.getElementById("mainelems").style.display="none";
 		iframe.src="https://node.roadkillsanta.repl.co/pxy/"+"https://www.google.com/search?q="+normlink;
 		iframe.style.display="block";
@@ -49,7 +42,6 @@ function go(num){
 	else {
 		var normlink = document.getElementById("searchbox").value;
 		var iframe=document.getElementById("pxy");
-		document.getElementById("topdiv").style.display="block";
 		document.getElementById("mainelems").style.display="none";
 		iframe.src="https://node.roadkillsanta.repl.co/pxy/"+encodedlink;
 		iframe.style.display="block";
